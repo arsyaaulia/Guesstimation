@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guesstimation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-card">
+            <h1 class="title">Guesstimation</h1>
+            
+            <div class="level-selector">
+                <button class="level-btn" data-level="1">easy</button>
+                <button class="level-btn" data-level="2">medium</button>
+                <button class="level-btn" data-level="3">hard</button>
+                <button class="level-btn" data-level="4">expert</button>
+            </div>
+
+            <div class="game-status">
+                <span class="attempts">attempts: <span id="attemptCount">0</span></span>
+                <span class="score">score: <span id="scoreValue">0</span></span>
+            </div>
+
+            <div class="game-area">
+                <p class="range-hint" id="rangeHint">range 1–10</p>
+                
+                <div class="input-group">
+                    <input type="number" id="guessInput" class="guess-input" placeholder="your guess" autocomplete="off">
+                    <button id="guessBtn" class="guess-btn">guess</button>
+                </div>
+
+                <div class="feedback-area">
+                    <p id="feedback" class="feedback-text"></p>
+                </div>
+            </div>
+
+            <button id="resetBtn" class="reset-btn">new game</button>
+            <a href="https://arsyaaulia.github.io/" target="_blank" class="about-link">
+                about developer
+            </a>
+        </div>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
